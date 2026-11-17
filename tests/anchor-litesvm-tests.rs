@@ -7,6 +7,7 @@ use spl_associated_token_account::get_associated_token_address;
 use spl_token;
 
 // Generate client modules from the program using declare_program!
+extern crate anchor_lang;
 anchor_lang::declare_program!(anchor_escrow);
 
 #[test]
