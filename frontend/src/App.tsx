@@ -36,7 +36,7 @@ type Status =
   | { kind: 'error'; text: string };
 
 export default function App() {
-  const [net, setNet] = useState<Net>('localnet');
+  const [net, setNet] = useState<Net>('devnet');
   return (
     <ConnectionProvider endpoint={ENDPOINTS[net]}>
       <WalletProvider wallets={WALLETS} autoConnect>
