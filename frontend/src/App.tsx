@@ -130,7 +130,7 @@ function Dashboard({ net, setNet }: { net: Net; setNet: (n: Net) => void }) {
         </div>
         <div className="controls">
           <select value={net} onChange={(e) => setNet(e.target.value as Net)} aria-label="Network">
-            <option value="localnet">Localnet</option>
+            {/* <option value="localnet">Localnet</option> */}
             <option value="devnet">Devnet</option>
           </select>
           <WalletMultiButton />
